@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageC"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:hint="quantity"
+                    android:id="@+id/quantite"/>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/red"
+                        android:id="@+id/btndown"
+                        android:text="-"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/green"
+                        android:id="@+id/btnup"
+                        android:text="+"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="50dp"
+                android:id="@+id/prixC"
+                android:layout_gravity="center"
+                android:layout_marginVertical="25dp"/>
+
+            <Button
+                android:id="@+id/trashbtn"
+                android:layout_width="46dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_restore_from_trash_24" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
